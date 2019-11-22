@@ -35,7 +35,7 @@ class KafkaConsumer:
         # Make sure to reference the project README
         # and use the Host URL for Kafka and Schema Registry! ✅
         self.broker_properties = {
-            "bootstrap.servers": [BROKER_URL],
+            "bootstrap.servers": BROKER_URL,
             "group.id": f'{topic_name_pattern}',
             "default.topic.config": {"auto.offset.reset": "earliest"}
         }

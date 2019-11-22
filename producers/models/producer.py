@@ -34,9 +34,7 @@ class Producer:
         # TODO: Configure the broker properties below. Make sure to reference the project README
         # and use the Host URL for Kafka and Schema Registry!
         self.broker_properties = {
-            "bootstrap.servers": ",".join([
-                "PLAINTEXT://localhost:9092"
-            ]),
+            "bootstrap.servers": "PLAINTEXT://localhost:9092",
             "schema.registry.url": "http://localhost:8081"
         }
 
